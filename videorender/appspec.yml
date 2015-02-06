@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /videorender
+    destination: /home/ubuntu/
+hooks:
+  BeforeInstall:
+    - location: scripts/removeoldcode
+      timeout: 300
+      runas: root
+    
+
