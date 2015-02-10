@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: videorender
+  - source: /
     destination: /home/ubuntu/
     
 
