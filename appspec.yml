@@ -3,5 +3,5 @@ os: linux
 files:
   - source: /videorender/
     destination: /home/ubuntu/videorender/
-    
+	runas: ubuntu	
 
