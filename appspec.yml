@@ -4,6 +4,7 @@ files:
   - source: /videorender/
     destination: /home/ubuntu/videorender/
 permissions:
+  - object: /videorender/
     owner: ubuntu
     group: ubuntu
     mode: 775  
