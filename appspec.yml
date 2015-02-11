@@ -3,5 +3,8 @@ os: linux
 files:
   - source: /videorender/
     destination: /home/ubuntu/videorender/
-    runas: ubuntu	
-
+permissions:
+  - object: *
+    owner: ubuntu
+    group: ubuntu
+    mode: 775  
