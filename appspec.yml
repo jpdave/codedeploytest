@@ -3,8 +3,13 @@ os: linux
 files:
   - source: /videorender/
     destination: /home/ubuntu/videorender/
-permissions:
-  - object: /videorender/
-    owner: ubuntu
-    group: ubuntu
-    mode: 775  
+
+hooks:
+  BeforeInstall:
+    - location: scripts/removeoldcode
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/changepermission
+      timeout: 300
+      runas: root	  

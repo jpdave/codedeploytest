@@ -1,0 +1,3 @@
+#!/bin/bash
+chown ubuntu:ubuntu -r /home/ubuntu/videorender/
+chmod -r 775 /home/ubuntu/videorender/
