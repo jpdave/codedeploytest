@@ -9,7 +9,7 @@ hooks:
     - location: scripts/removeoldcode
       timeout: 300
       runas: root
-  ApplicationStop:
+  ApplicationStart:
     - location: scripts/changepermission
       timeout: 300
       runas: root	  
