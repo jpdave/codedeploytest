@@ -1,3 +1,0 @@
-#!/bin/bash
-sudo chown ubuntu:ubuntu -R /home/ubuntu/videorender/
-sudo chmod 775 -R /home/ubuntu/videorender/
