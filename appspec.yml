@@ -4,12 +4,11 @@ files:
   - source: /videorender/
     destination: /home/ubuntu/videorender/
 
-hooks:
-  BeforeInstall:
-    - location: scripts/removeoldcode
-      timeout: 300
-      runas: root
-  ValidateService:
-    - location: scripts/changepermission
-      timeout: 300
-      runas: ubuntu	  
+permissions:
+  - object: /home/ubuntu/videorender/
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu     
+    mode: 775
+    type:
+    - file
