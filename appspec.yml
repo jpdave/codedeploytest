@@ -12,4 +12,4 @@ hooks:
   ApplicationStart:
     - location: scripts/changepermission
       timeout: 300
-      runas: root	  
+      runas: ubuntu	  
